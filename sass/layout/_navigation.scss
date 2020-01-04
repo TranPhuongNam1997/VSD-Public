@@ -1,0 +1,114 @@
+// ======================================================
+// Layout :: Navigation
+// ======================================================
+.info-user{
+  margin-bottom: 33px;
+  text-align: center;
+  .avatar{
+    margin-bottom: 15px;
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+  .name-user{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 11px;
+  }
+  .change-pass{
+    font-size: 12px;
+    color: #93D7F9;
+  }
+}
+
+.menu-category{
+  .menucate-lv1{
+    >li{
+      position: relative;
+      >a{
+        background: #ebeef0;
+        margin-bottom: 5px;
+        padding: 12px 18px;
+        color: #535353;
+        border-radius: 3px;
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        &:hover{
+          background: #D2EAFF;
+          color: $c-bl;
+        }
+      }
+      .menucate-lv2{
+        padding: 18px 10px 0 39px;
+        li{
+          position: relative;
+          &:after{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: -14px;
+            width: 4px;
+            height: 4px;
+            background: #606060;
+            border-radius: 50%;
+          }
+          &:hover:after{
+            background: #075fcf;
+          }
+          &:hover a{
+            color: #075fcf;
+            text-decoration: underline;
+          }
+          span{
+            color: #ED1111;
+          }
+
+          a{
+            color: #515E6D;
+            padding-bottom: 12px;
+            display: block;
+
+          }
+        }
+        li.active-child{
+          &:after{
+            background: #075fcf;
+          }
+          a{
+            color: #075fcf;
+            text-decoration: underline;
+          }
+        }
+
+      }
+    }
+    >li.active{
+      >a{
+        background: #D2EAFF;
+        color: $c-bl;
+      }
+
+    }
+    >li.hasdrop-cate:after{
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 5px;
+      background: url("../img/icon-rotate-down-19.svg");
+      top: 17px;
+      right: 20px;
+      transition: all 0.3s;
+    }
+    >li.hasdrop-cate.active:after{
+      content: '';
+      background: url("../img/rotate-light-white_2 - dashboard.svg");
+    }
+  }
+}
+.hasdrop-cate.rotate-down:after{
+  transition: all 0.3s;
+  transform: rotate(180deg);
+}
