@@ -28,6 +28,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
+  color: #3d3d3d;
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial"; }
@@ -39,6 +40,102 @@ body {
 
 .row-login {
   margin: 0 35px; }
+
+.header {
+  background: #164989; }
+  .header .logo-main {
+    padding: 14px 17px 18px;
+    margin-bottom: 0; }
+    .header .logo-main a svg {
+      width: 257px;
+      height: 45px; }
+
+.navigation {
+  padding: 33px 50px;
+  background: #195493;
+  width: 16%;
+  float: left;
+  height: 100%; }
+
+.info-user {
+  margin-bottom: 33px;
+  text-align: center; }
+  .info-user .avatar {
+    margin-bottom: 15px; }
+    .info-user .avatar img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%; }
+  .info-user .name-user {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 11px; }
+  .info-user .change-pass {
+    font-size: 12px;
+    color: #93D7F9; }
+
+.menu-category .menucate-lv1 > li {
+  position: relative; }
+  .menu-category .menucate-lv1 > li > a {
+    background: #ebeef0;
+    margin-bottom: 5px;
+    padding: 12px 18px;
+    color: #535353;
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+    font-weight: 700; }
+    .menu-category .menucate-lv1 > li > a:hover {
+      background: #D2EAFF;
+      color: #164989; }
+  .menu-category .menucate-lv1 > li .menucate-lv2 {
+    padding: 18px 10px 0 39px; }
+    .menu-category .menucate-lv1 > li .menucate-lv2 li {
+      position: relative; }
+      .menu-category .menucate-lv1 > li .menucate-lv2 li:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -14px;
+        width: 4px;
+        height: 4px;
+        background: #606060;
+        border-radius: 50%; }
+      .menu-category .menucate-lv1 > li .menucate-lv2 li:hover:after {
+        background: #075fcf; }
+      .menu-category .menucate-lv1 > li .menucate-lv2 li:hover a {
+        color: #075fcf;
+        text-decoration: underline; }
+      .menu-category .menucate-lv1 > li .menucate-lv2 li span {
+        color: #ED1111; }
+      .menu-category .menucate-lv1 > li .menucate-lv2 li a {
+        color: #515E6D;
+        padding-bottom: 12px;
+        display: block; }
+    .menu-category .menucate-lv1 > li .menucate-lv2 li.active-child:after {
+      background: #075fcf; }
+    .menu-category .menucate-lv1 > li .menucate-lv2 li.active-child a {
+      color: #075fcf;
+      text-decoration: underline; }
+.menu-category .menucate-lv1 > li.active > a {
+  background: #D2EAFF;
+  color: #164989; }
+.menu-category .menucate-lv1 > li.hasdrop-cate:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  background: url("../img/icon-rotate-down-19.svg");
+  top: 17px;
+  right: 20px;
+  transition: all 0.3s; }
+.menu-category .menucate-lv1 > li.hasdrop-cate.active:after {
+  content: '';
+  background: url("../img/rotate-light-white_2 - dashboard.svg"); }
+
+.hasdrop-cate.rotate-down:after {
+  transition: all 0.3s;
+  transform: rotate(180deg); }
 
 .login-main {
   position: relative;

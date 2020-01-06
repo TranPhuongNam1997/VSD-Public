@@ -1,6 +1,16 @@
 // ======================================================
 // Layout :: Navigation
 // ======================================================
+.navigation{
+  padding: 33px 50px;
+  background: #195493;
+  width: 308px;
+  float: left;
+  position: fixed;
+  top: 76px;
+  left: 0;
+  bottom: 0;
+}
 .info-user{
   margin-bottom: 33px;
   text-align: center;
@@ -16,6 +26,7 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 11px;
+    color: $c-wh;
   }
   .change-pass{
     font-size: 12px;
@@ -28,21 +39,21 @@
     >li{
       position: relative;
       >a{
-        background: #ebeef0;
+        background: #2A6FAD;
         margin-bottom: 5px;
         padding: 12px 18px;
-        color: #535353;
+        color: $c-wh;
         border-radius: 3px;
         display: block;
         font-size: 14px;
         font-weight: 700;
         &:hover{
-          background: #D2EAFF;
-          color: $c-bl;
+          background: #58ABDD;
+          color: $c-wh;
         }
       }
       .menucate-lv2{
-        padding: 18px 10px 0 39px;
+        padding: 19px 5px 8px 31px;
         li{
           position: relative;
           &:after{
@@ -52,14 +63,14 @@
             left: -14px;
             width: 4px;
             height: 4px;
-            background: #606060;
+            background: $c-wh;
             border-radius: 50%;
           }
           &:hover:after{
-            background: #075fcf;
+            background: $c-wh;
           }
           &:hover a{
-            color: #075fcf;
+            color: #58ABDD;
             text-decoration: underline;
           }
           span{
@@ -67,7 +78,8 @@
           }
 
           a{
-            color: #515E6D;
+            color: $c-wh;
+            font-weight: 700;
             padding-bottom: 12px;
             display: block;
 
@@ -75,10 +87,10 @@
         }
         li.active-child{
           &:after{
-            background: #075fcf;
+            background: $c-wh;
           }
           a{
-            color: #075fcf;
+            color: #58ABDD;
             text-decoration: underline;
           }
         }
@@ -87,8 +99,8 @@
     }
     >li.active{
       >a{
-        background: #D2EAFF;
-        color: $c-bl;
+        background: #58ABDD;
+        color: $c-wh;
       }
 
     }
@@ -111,4 +123,27 @@
 .hasdrop-cate.rotate-down:after{
   transition: all 0.3s;
   transform: rotate(180deg);
+}
+.menu-left-block{
+  position: relative;
+  height: 100%;
+  .btn-logout{
+    position: absolute;
+    left: 0;
+    bottom: 19px;
+    z-index: 999;
+    width: 100%;
+    a{
+      background: #2A6FAD;
+      padding: 12px 18px;
+      color: #fff;
+      border-radius: 3px;
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      &:hover{
+        background: #58ABDD;
+      }
+    }
+  }
 }

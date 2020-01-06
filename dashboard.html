@@ -30,33 +30,182 @@
             </h1>
         </header>
 
-        <main class="main">
+        <main class="main clearfix">
             <nav class="navigation">
-                <div class="info-user">
-                    <div class="avatar">
-                        <img src="img/avatar-15.svg" alt="ảnh">
+                <div class="menu-left-block">
+                    <div class="info-user">
+                        <div class="avatar">
+                            <img src="img/avatar-15.svg" alt="ảnh">
+                        </div>
+                        <div class="name-user">Lutuananh1994</div>
+                        <a href="#" class="change-pass">Đổi mật khẩu</a>
                     </div>
-                    <div class="name-user">Lutuananh1994</div>
-                    <a href="#" class="change-pass">Đổi mật khẩu</a>
-                </div>
-                <div class="menu-category">
-                    <ul class="menucate-lv1">
-                        <li class=""><a href="#">Quản trị TCPH menu</a></li>
-                        <li class="active hasdrop-cate rotate-down">
-                            <a href="#">Thông tin hồ sơ</a>
-                            <ul class="menucate-lv2">
-                                <li class="active-child"><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                                <li><a href="#">Hồ sơ đăng ký lần đầu <span>(20)</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div class="menu-category">
+                        <ul class="menucate-lv1">
+                            <li class="active"><a href="#">Dashboard</a></li>
+                            <li class="hasdrop-cate rotate-down">
+                                <a href="#">Hồ sơ TC phát hành</a>
+                                <ul class="menucate-lv2">
+                                    <li class=""><a href="#">HS đăng ký lần đầu</a></li>
+                                    <!--<li class="active-child"><a href="#">HS đăng ký lần đầu</a></li>-->
+                                    <li><a href="#">HS đăng ký bổ sung</a></li>
+                                    <li><a href="#">HS hủy đăng ký</a></li>
+                                    <li><a href="#">HS chuyển sàn</a></li>
+                                    <li><a href="#">HS chỉnh sửa thông tin</a></li>
+                                    <li><a href="#">HS thực hiện quyền</a></li>
+                                    <li><a href="#">HS chuyển quyền sở hữu</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">Hồ sơ nhận về VSD</a></li>
+                            <li class=""><a href="#">Thông tin hướng dẫn</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-logout">
+                        <a href="#">Đăng xuất</a>
+                    </div>
                 </div>
             </nav>
+            <section class="content-main-wrap">
+                <div class="bread-crumb bread-crumb-dashboard">
+                    <div class="bread-morni">
+                            <span>
+                                <img class="bread-light" src="img/icon-bread-19.svg" alt="ảnh">
+                                <img class="bread-dark" src="img/icon-bread-dark-19.svg" alt="ảnh">
+                                <a href="#">Quản trị TCPH</a>
+                            </span>
+                        <span class="caret-right">
+                                <i class="fa fa-caret-right"></i>
+                            </span>
+                        <span>
+                                <a href="#">Thông tin hồ sơ</a>
+                            </span>
+                        <span class="caret-right">
+                                <i class="fa fa-caret-right"></i>
+                            </span>
+                        <span>
+                                <a href="#">Hồ sơ đăng ký lần đầu</a>
+                            </span>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="row-vsd-13">
+                        <div class="col-pc13-6">
+                            <div class="zone-white">
+                                <div class="resumes-submit">
+                                    <h2 class="title-notice">Thông báo hồ sơ gửi lên VSD</h2>
+                                    <a href="#" class="view-detail">Xem chi tiết</a>
+                                </div>
+                                <div class="profile-block state-declined">
+                                    <h3 class="title-profile"><a href="#">Giấy chứng nhận đăng ký chứng khoán</a></h3>
+                                    <div class="items-profile">
+                                        <div class="date-take-end">
+                                            <div class="date-take">
+                                                <span class="txt-date-main">Ngày nhận</span>
+                                                <span>26/11/2019</span>
+                                            </div>
+                                            <div class="date-take">
+                                                <span class="txt-date-main">Ngày sửa cuối cùng</span>
+                                                <span>26/11/2019</span>
+                                            </div>
+                                        </div>
+                                        <div class="state-profile-block">
+                                            <span>Trạng thái</span>
+                                            <span class="state-profile">Đã từ chối</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-block state-comfirmed">
+                                    <h3 class="title-profile"><a href="#">Giấy chứng nhận đăng ký chứng khoán</a></h3>
+                                    <div class="items-profile">
+                                        <div class="date-take-end">
+                                            <div class="date-take">
+                                                <span class="txt-date-main">Ngày nhận</span>
+                                                <span>26/11/2019</span>
+                                            </div>
+                                            <div class="date-take">
+                                                <span class="txt-date-main">Ngày sửa cuối cùng</span>
+                                                <span>26/11/2019</span>
+                                            </div>
+                                        </div>
+                                        <div class="state-profile-block">
+                                            <span>Trạng thái</span>
+                                            <span class="state-profile">Đã xác nhận</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-block state-waitcomfirmed">
+                                    <h3 class="title-profile"><a href="#">Giấy chứng nhận đăng ký chứng khoán</a></h3>
+                                    <div class="items-profile">
+                                        <div class="date-take-end">
+                                            <div class="date-take">
+                                                <span class="txt-date-main">Ngày nhận</span>
+                                                <span>26/11/2019</span>
+                                            </div>
+                                            <div class="date-take">
+                                                <span class="txt-date-main">Ngày sửa cuối cùng</span>
+                                                <span>26/11/2019</span>
+                                            </div>
+                                        </div>
+                                        <div class="state-profile-block">
+                                            <span>Trạng thái</span>
+                                            <span class="state-profile">Chờ xác nhận</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-pc13-6">
+                            <div class="zone-white">
+                                <div class="resumes-submit">
+                                    <h2 class="title-notice">Thông báo hồ sơ VSD gửi về</h2>
+                                    <a href="#" class="view-detail">Xem chi tiết</a>
+                                </div>
+                                <div class="pro-sentback-block">
+                                    <h3 class="title-pro-sentback"><a href="#">ALV: Tham dự Đại hội đồng cổ đông bất thường năm 2019</a></h3>
+                                    <div class="time-sentback">
+                                        <span>26/11/2019</span>
+                                        <span>11:27:48</span>
+                                    </div>
+                                </div>
+                                <div class="pro-sentback-block">
+                                    <h3 class="title-pro-sentback"><a href="#">ALV: Tham dự Đại hội đồng cổ đông bất thường năm 2019</a></h3>
+                                    <div class="time-sentback">
+                                        <span>26/11/2019</span>
+                                        <span>11:27:48</span>
+                                    </div>
+                                </div>
+                                <div class="pro-sentback-block">
+                                    <h3 class="title-pro-sentback"><a href="#">ALV: Tham dự Đại hội đồng cổ đông bất thường năm 2019</a></h3>
+                                    <div class="time-sentback">
+                                        <span>26/11/2019</span>
+                                        <span>11:27:48</span>
+                                    </div>
+                                </div>
+                                <div class="pro-sentback-block">
+                                    <h3 class="title-pro-sentback"><a href="#">ALV: Tham dự Đại hội đồng cổ đông bất thường năm 2019</a></h3>
+                                    <div class="time-sentback">
+                                        <span>26/11/2019</span>
+                                        <span>11:27:48</span>
+                                    </div>
+                                </div>
+                                <div class="pro-sentback-block">
+                                    <h3 class="title-pro-sentback"><a href="#">ALV: Tham dự Đại hội đồng cổ đông bất thường năm 2019</a></h3>
+                                    <div class="time-sentback">
+                                        <span>26/11/2019</span>
+                                        <span>11:27:48</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <footer class="footer">
+
+                </footer>
+            </section>
         </main>
         <footer class="footer">
 
