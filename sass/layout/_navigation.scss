@@ -55,6 +55,9 @@
 
   .avatar{
     margin-bottom: 15px;
+    @include desktop{
+      margin-bottom: 10px;
+    }
     @include mobile{
       margin-right: 15px;
       margin-bottom: 0;
