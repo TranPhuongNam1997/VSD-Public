@@ -38,7 +38,7 @@ $(function() {
             0: { items: 1, }
         },
         rewind: false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         smartSpeed: 500, //slide speed smooth
