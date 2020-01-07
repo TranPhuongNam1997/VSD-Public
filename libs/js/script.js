@@ -13,6 +13,19 @@ $( document ).ready(function() {
             $(this).parent().addClass('rotate-down');
         }
     });
+
+    // js menubar
+
+    $(".btn-bars-head button").click(function () {
+        overlay.toggle();
+        $('.navigation').toggleClass('open');
+    });
+
+    var overlay = $("<div class='overlay'></div>");
+    $("body").prepend(overlay);
+    overlay.click(function () {
+        $(".btn-bars-head button").trigger('click');
+    })
 });
 $(function() {
     $(".slider-news").owlCarousel({

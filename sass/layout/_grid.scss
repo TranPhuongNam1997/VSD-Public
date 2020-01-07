@@ -38,5 +38,19 @@
   max-width: 50%;
   position: relative;
   margin-bottom: 70px;
+  @include tablet-horizontal{
+    margin-bottom: 50px;
+  }
+  @include mobile-horizontal{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
-
+.row-foot{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

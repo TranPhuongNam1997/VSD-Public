@@ -2,7 +2,7 @@
 // Abstracts :: Mixins
 // ======================================================
 @mixin desktop{
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1200px) and (max-width: 1390px) {
     @content
   }
 }
@@ -22,7 +22,7 @@
   }
 }
 @mixin mobile{
-  @media only screen and (max-width: 5760px){
+  @media only screen and (max-width: 576px){
     @content
   }
 }

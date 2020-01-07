@@ -10,12 +10,55 @@
   top: 76px;
   left: 0;
   bottom: 0;
+  z-index: 9999;
+  @include desktop{
+    padding: 15px 26px;
+  }
+  @include tablet-horizontal{
+    padding: 15px 15px;
+    width: 250px;
+  }
+  @include tablet{
+    top: 66px;
+
+    transition: all 0.4s;
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+  @include mobile{
+    width: 100%;
+  }
+  &.open{
+    transform: translateX(0);
+    visibility: visible;
+    transition: all 0.4s;
+  }
 }
 .info-user{
   margin-bottom: 33px;
   text-align: center;
+  @include desktop{
+    margin-bottom: 11px;
+  }
+  @include tablet-horizontal{
+    margin-bottom: 11px;
+  }
+  @include mobile{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 15px;
+    .uti-pass{
+      text-align: left;
+    }
+  }
+
   .avatar{
     margin-bottom: 15px;
+    @include mobile{
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
     img{
       width: 60px;
       height: 60px;
@@ -36,6 +79,7 @@
 
 .menu-category{
   .menucate-lv1{
+
     >li{
       position: relative;
       >a{
@@ -51,9 +95,23 @@
           background: #58ABDD;
           color: $c-wh;
         }
+        @include desktop{
+          padding: 9px 18px;
+        }
+        @include tablet-horizontal{
+          padding: 9px 18px;
+        }
+
       }
       .menucate-lv2{
         padding: 19px 5px 8px 31px;
+        @include desktop{
+          padding: 8px 5px 0 31px;
+        }
+        @include tablet-horizontal{
+          padding: 8px 5px 0 31px;
+        }
+
         li{
           position: relative;
           &:after{
@@ -113,6 +171,13 @@
       top: 17px;
       right: 20px;
       transition: all 0.3s;
+      @include desktop{
+        top: 14px;
+      }
+      @include tablet-horizontal{
+        top: 14px;
+      }
+
     }
     >li.hasdrop-cate.active:after{
       content: '';
@@ -127,12 +192,25 @@
 .menu-left-block{
   position: relative;
   height: 100%;
+  @include mobile{
+    overflow: auto;
+  }
   .btn-logout{
     position: absolute;
     left: 0;
     bottom: 19px;
     z-index: 999;
     width: 100%;
+    @include desktop{
+      bottom: 0;
+    }
+    @include tablet-horizontal{
+      bottom: 0;
+    }
+    @include mobile-horizontal{
+      position: unset;
+    }
+
     a{
       background: #2A6FAD;
       padding: 12px 18px;
@@ -144,6 +222,13 @@
       &:hover{
         background: #58ABDD;
       }
+      @include desktop{
+        padding: 9px 18px;
+      }
+      @include tablet-horizontal{
+        padding: 9px 18px;
+      }
+
     }
   }
 }

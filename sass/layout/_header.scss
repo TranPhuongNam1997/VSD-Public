@@ -3,14 +3,48 @@
 // ======================================================
 .header{
   background: $c-bl;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  top: 0;
+  left: 0;
   .logo-main{
     padding: 11px 17px 15px;
     margin-bottom: 0;
+    @include tablet{
+      padding: 6px 15px 10px;
+    }
+
     a{
       svg{
         width: 257px;
         height: 45px;
+        @include tablet{
+          width: 219px;
+        }
       }
     }
+  }
+}
+.btn-bars-head{
+  display: none;
+  button{
+    background: transparent;
+    border: none;
+    padding: 10px 10px;
+    outline: none;
+    img{
+      width: 20px;
+    }
+  }
+
+  @include tablet{
+    display: block;
+    position: fixed;
+    top: 12px;
+    right: 15px;
+  }
+  @include mobile{
+    right: 5px;
   }
 }

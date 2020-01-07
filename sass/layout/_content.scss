@@ -208,8 +208,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mobile-horizontal{
+    display: none;
+  }
   &.bread-crumb{
     padding: 24px 50px;
+    @include tablet-horizontal{
+      padding: 24px 20px;
+    }
+    @include tablet{
+      padding: 20px;
+    }
+    @include mobile-horizontal{
+      padding: 15px;
+    }
   }
   .bread-morni{
     span{
@@ -265,10 +277,21 @@
 .content-main-wrap{
   width: calc(100% - 308px);
   float: right;
-  background: #D3D8DD;
+  @include tablet-horizontal{
+    width: calc(100% - 250px);
+  }
+  @include tablet{
+    width: 100%;
+  }
 }
 .content-block{
   padding: 0 50px;
+  @include tablet-horizontal{
+    padding: 0 20px;
+  }
+  @include mobile{
+    padding: 0 15px;
+  }
 }
 .resumes-submit{
   display: flex;
@@ -276,15 +299,24 @@
   justify-content: space-between;
   padding: 20px 24px;
   background: #D2EAFF;
+  @include tablet-horizontal{
+    padding: 20px 15px;
+  }
 }
 .profile-block{
   padding: 12px 24px;
   border-bottom: 1px solid #dedede;
+  @include tablet-horizontal{
+    padding: 12px 15px;
+  }
 }
 .items-profile{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mobile{
+    display: block;
+  }
   .date-take-end{
     .date-take{
       margin-right: 45px;
@@ -355,8 +387,11 @@
 }
 
 .pro-sentback-block{
-  padding: 19px 37px 10px;
+  padding: 12px 15px 10px;
   border-bottom: 1px solid #dedede;
+  &:last-child{
+    border-bottom: none;
+  }
   .title-pro-sentback{
     margin-bottom: 8px;
     font-size: 13px;
@@ -364,6 +399,7 @@
       color: #232323;
       &:hover{
         text-decoration: underline;
+        color: $c-bl;
       }
     }
   }
@@ -371,7 +407,4 @@
     color: #969696;
     font-size: 12px;
   }
-}
-.pro-sentback-block:last-child{
-  border-bottom: none;
 }
