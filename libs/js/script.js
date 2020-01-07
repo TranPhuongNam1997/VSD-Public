@@ -1,5 +1,10 @@
 $( document ).ready(function() {
 
+
+    var getchieucao = $("footer").height();
+    $(".push").css({"height": getchieucao + 38});
+    $(".wrapper").css({"margin-bottom": -(getchieucao + 38)});
+
     // js navigation
     $(".menucate-lv2").hide();
     $(".rotate-down .menucate-lv2").show();
@@ -25,7 +30,10 @@ $( document ).ready(function() {
     $("body").prepend(overlay);
     overlay.click(function () {
         $(".btn-bars-head button").trigger('click');
-    })
+    });
+
+
+
 });
 $(function() {
     $(".slider-news").owlCarousel({

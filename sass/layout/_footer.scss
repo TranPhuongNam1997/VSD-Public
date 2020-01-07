@@ -7,6 +7,9 @@
   width: calc(100% - 308px);
   float: right;
   background: $c-wh;
+  position: relative;
+  right: 0;
+  bottom: 0;
   @include tablet-horizontal{
     width: calc(100% - 250px);
   }
