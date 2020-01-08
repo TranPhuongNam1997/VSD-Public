@@ -3,7 +3,7 @@
 // ======================================================
 
 .container-login{
-  max-width: 1200px;
+  max-width: 1140px;
   padding: 0 5px;
   width: 100%;
   margin: 0 auto;
@@ -55,3 +55,49 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.row-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-vsd-75{
+  padding: 0 6px;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+  position: relative;
+  transition: all 0.3s;
+  margin-bottom: 12px;
+  &.change-width{
+    -ms-flex: 0 0 95%;
+    flex: 0 0 95%;
+    max-width: 95%;
+    transition: all 0.3s;
+  }
+}
+.col-vsd-25{
+  padding: 0 6px;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  transition: all 0.3s;
+  margin-bottom: 12px;
+  &.change-width{
+    -ms-flex: 0 0 5%;
+    flex: 0 0 5%;
+    max-width: 5%;
+    transition: all 0.3s;
+  }
+}
+.row-vsd-differ{
+  margin: 0 -6px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+

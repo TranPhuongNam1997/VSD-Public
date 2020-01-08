@@ -44,6 +44,11 @@
     line-height: 20px;
   }
 }
+.connect-social{
+  @media (max-width: 1390px) {
+      padding-right: 30px;
+  }
+}
 #back-to-top{
   position: fixed;
   bottom: 25px;

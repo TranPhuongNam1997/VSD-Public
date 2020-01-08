@@ -33,6 +33,13 @@ body {
   line-height: 16px;
   font-family: "Arial"; }
 
+.body-wrap {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%; }
+
 html, body {
   height: 100%; }
 
@@ -43,7 +50,8 @@ html, body {
   background: #D3D8DD;
   overflow: hidden;
   position: relative;
-  max-width: 1920px; }
+  max-width: 1920px;
+  width: 100%; }
 
 .main {
   padding-top: 76px; }
@@ -169,7 +177,8 @@ html, body {
         color: #768289; }
 
 .container-login {
-  max-width: 1030px;
+  max-width: 1200px;
+  padding: 0 5px;
   width: 100%;
   margin: 0 auto; }
 
@@ -224,11 +233,11 @@ html, body {
   background: #164989;
   position: fixed;
   z-index: 999999;
+  max-width: 1920px;
   width: 100%;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
-  max-width: 1920px; }
+  transform: translateX(-50%); }
   .header .logo-main {
     padding: 11px 17px 15px;
     margin-bottom: 0; }
@@ -271,6 +280,9 @@ html, body {
   left: 0;
   bottom: 0;
   z-index: 9999; }
+  @media (max-width: 1920px) {
+    .navigation {
+      position: fixed; } }
   @media only screen and (min-width: 1200px) and (max-width: 1390px) {
     .navigation {
       padding: 15px 26px; } }
@@ -567,7 +579,7 @@ html, body {
       position: relative;
       z-index: 10; }
   .login-main .news {
-    width: 547px;
+    width: 607px;
     padding-top: 94px;
     position: relative;
     z-index: 10; }
@@ -785,9 +797,9 @@ html, body {
   width: calc(100% - 308px);
   float: right;
   background: #fff;
-  position: absolute;
-  bottom: 0;
-  right: 0; }
+  position: relative;
+  right: 0;
+  bottom: 0; }
   @media only screen and (max-width: 1199px) {
     .footer {
       width: calc(100% - 250px); } }
