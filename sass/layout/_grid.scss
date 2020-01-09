@@ -60,7 +60,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
 }
 .col-vsd-75{
@@ -77,6 +77,14 @@
     max-width: 95%;
     transition: all 0.3s;
   }
+}
+.col-vsd-100{
+  padding: 0 26px 0 6px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 12px;
 }
 .col-vsd-25{
   padding: 0 6px;
