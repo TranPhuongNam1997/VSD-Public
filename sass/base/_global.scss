@@ -90,6 +90,8 @@ html, body {
 
 .modal.modal-vsd{
   padding-right: 0!important;
+  background: rgba(0, 0, 0, 0.60);
+  z-index: 999999;
   .size-modal{
     max-width: 1000px;
     width: 100%;

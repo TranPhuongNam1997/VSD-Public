@@ -118,7 +118,9 @@ html, body {
   font-size: 13px; }
 
 .modal.modal-vsd {
-  padding-right: 0 !important; }
+  padding-right: 0 !important;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999999; }
   .modal.modal-vsd .size-modal {
     max-width: 1000px;
     width: 100%;
