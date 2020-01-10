@@ -12,12 +12,16 @@
     <link rel="stylesheet" href="libs/css/font-awesome.css">
     <link rel="stylesheet" href="libs/css/owl.carousel2.css">
     <link rel="stylesheet" href="libs/css/owl.theme2.css">
+    <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
 
     <link rel="stylesheet" href="sass/main.css">
 
     <script type="text/javascript" src="libs/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="libs/js/owl.carousel2.min.js"></script>
+    <script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="libs/js/moment.min.js"></script>
+    <script type="text/javascript" src="libs/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="libs/js/script.js"></script>
 </head>
 <body>
@@ -36,11 +40,11 @@
                 </div>
                 <div class="menu-category">
                     <ul class="menucate-lv1">
-                        <li class="active"><a href="#">Dashboard</a></li>
-                        <li class="hasdrop-cate rotate-down">
+                        <li class=""><a href="#">Dashboard</a></li>
+                        <li class="active hasdrop-cate rotate-down">
                             <a href="#">Hồ sơ TC phát hành</a>
                             <ul class="menucate-lv2">
-                                <li class=""><a href="#">HS đăng ký lần đầu</a></li>
+                                <li class="active-child"><a href="#">HS đăng ký lần đầu</a></li>
                                 <!--<li class="active-child"><a href="#">HS đăng ký lần đầu</a></li>-->
                                 <li><a href="#">HS đăng ký bổ sung</a></li>
                                 <li><a href="#">HS hủy đăng ký</a></li>
@@ -98,288 +102,251 @@
                 </div>
                 <div class="content-page-block">
                     <div class="row-vsd-differ">
-                        <div class="col-vsd-75">
-                            <div class="zone-white-x">
-                                <div class="form-data-block">
-                                    <h2 class="title-heading">
-                                        <span>Chi tiết hồ sơ</span>
-                                    </h2>
-                                    <div class="items-block-data">
-                                        <div class="title-info">Hồ sơ đăng ký lần đầu trái phiếu công ty</div>
-                                        <form class="form-check-validate pd-33">
-                                            <div class="form-enter-default">
-                                                <div class="txt-info-issuers">
-                                                    <h3>Thông tin về TCPH</h3>
-                                                    <div class="state-issuers">Đã từ chối</div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Tên TCPH (tên đầy đủ)</div>
-                                                                <div class="view-data-right">Công ty cổ phần Cảng Xanh Vip</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Vốn điều lệ</div>
-                                                                <div class="view-data-right">632.500.000.000 </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Tên đầy đủ</div>
-                                                                <div class="view-data-right">Công ty cổ phần Cảng Xanh Vip</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Vốn thực góp</div>
-                                                                <div class="view-data-right">632.500.000.000 </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Tên viết tắt</div>
-                                                                <div class="view-data-right">VIP GREENPORT</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Giấy ĐK kinh doanh số</div>
-                                                                <div class="view-data-right">0201579242</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Tên tiếng anh</div>
-                                                                <div class="view-data-right">Vip Greenport Joint Stock Company</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Nơi cấp</div>
-                                                                <div class="view-data-right">Hà Nội</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Điện thoại</div>
-                                                                <div class="view-data-right">0225.8830333</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Cấp lần đầu ngày</div>
-                                                                <div class="view-data-right">28/10/2014</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Fax</div>
-                                                                <div class="view-data-right">0225.8830668</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Cấp thay đổi lần thứ</div>
-                                                                <div class="view-data-right">Lần thứ 3 </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Số tài khoản</div>
-                                                                <div class="view-data-right">0201579242</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Ngày cấp thay đổi</div>
-                                                                <div class="view-data-right">15/11/2017</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Nơi mở tài khoản</div>
-                                                                <div class="view-data-right">Mở tài khoản</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Người đại diện liên hệ</div>
-                                                                <div class="view-data-right">Trung tâm lưu ký chứng khoán Việt Nam</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="formgroup-vsd">
-                                                            <div class="row-form">
-                                                                <div class="title-input">Ghi chú</div>
-                                                                <div class="view-data-right">Trung tâm lưu ký chứng khoán Việt Nam</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                        <div class="col-vsd-100">
+                            <div class="zone-white-x pd-20">
+                                <div class="search-block">
+                                    <div class="txt-search">Tìm kiếm</div>
+                                    <div class="zone-search">
+                                        <div class="items-search">
+                                            <labbel class="lbl-search">Tên/ mã hồ sơ</labbel>
+                                            <div class="field-search">
+                                                <select>
+                                                    <option value="">- All -</option>
+                                                    <option value="">- All -</option>
+                                                    <option value="">- All -</option>
+                                                </select>
                                             </div>
-                                            <div class="file-type-profile">
-                                                <div class="head-type-profile">
-                                                    <div class="left-profile">
-                                                        <h3>Giấy đề nghị đăng ký chứng khoán</h3>
-                                                        <p class="file-return">hosodangkylandau3hosodangkylandau3.png</p>
-                                                    </div>
-                                                    <div class="status-confirm">
-                                                        <span>Đã từ chối</span>
-                                                        <div class="reason-refusal">
-                                                            Lý do: <span>Sai định dạng</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                        <div class="items-search">
+                                            <labbel class="lbl-search">Loại hồ sơ</labbel>
+                                            <div class="field-search">
+                                                <select>
+                                                    <option value="">- All -</option>
+                                                    <option value="">- All -</option>
+                                                    <option value="">- All -</option>
+                                                </select>
                                             </div>
-                                            <div class="file-type-profile">
-                                                <div class="head-type-profile">
-                                                    <div class="left-profile">
-                                                        <h3>Giấy đề nghị cấp mã chứng khoán </h3>
-                                                        <p class="file-return">hosodangkylandau3hosodangkylandau3.png</p>
-                                                    </div>
-                                                    <div class="status-waitcomfirm">
-                                                        <span>Chờ xác nhận</span>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                        <div class="items-search">
+                                            <labbel class="lbl-search">Trạng thái</labbel>
+                                            <div class="field-search">
+                                                <input type="text">
                                             </div>
-                                            <div class="file-type-profile">
-                                                <div class="head-type-profile">
-                                                    <div class="left-profile">
-                                                        <h3>Sổ đăng ký người sở hữu chứng khoán </h3>
-                                                        <p class="file-return">hosodangkylandau3hosodangkylandau3.png</p>
-                                                    </div>
-                                                    <div class="status-confirmed">
-                                                        <span>Đã xác nhận</span>
-                                                    </div>
-                                                </div>
+                                        </div>
+                                        <div class="items-search">
+                                            <labbel class="lbl-search">Ngày tạo</labbel>
+                                            <div class="field-search">
+                                                <input type="text" name="datenormal" class="datepicker-vsd" autocomplete="off">
                                             </div>
+                                        </div>
+                                        <div class="items-search">
+                                            <labbel class="lbl-search">Ngày duyệt</labbel>
+                                            <div class="field-search">
+                                                <input type="text" name="datenormal" class="datepicker-vsd" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="btn-search-group">
+                                            <button class="btn-search">Tìm kiếm</button>
+                                        </div>
 
-
-
-                                            <div class="file-type-profile">
-                                                <div class="head-type-profile">
-                                                    <h3>Thông tin khác</h3>
-                                                </div>
-                                                <div class="block-detail-profile">
-                                                    <div class="left-detail-profile">
-                                                        <span class="name-typefile">Chứng minh thư</span>
-                                                        <p class="file-return">hosodangkylandau3hosodangkylandau3.png</p>
-                                                    </div>
-                                                    <div class="status-confirm">
-                                                        <span>Đã từ chối</span>
-                                                        <div class="reason-refusal">
-                                                            Lý do: <span>Sai định dạng</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="block-detail-profile">
-                                                    <div class="left-detail-profile">
-                                                        <span class="name-typefile">Chứng minh thư</span>
-                                                        <p class="file-return">hosodangkylandau3hosodangkylandau3.png</p>
-                                                    </div>
-                                                    <div class="status-waitcomfirm">
-                                                        <span>Chờ xác nhận</span>
-                                                    </div>
-                                                </div>
-                                                <div class="block-detail-profile">
-                                                    <div class="left-detail-profile">
-                                                        <span class="name-typefile">Chứng minh thư</span>
-                                                        <p class="file-return">hosodangkylandau3hosodangkylandau3.png</p>
-                                                    </div>
-                                                    <div class="status-confirmed">
-                                                        <span>Đã xác nhận</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="file-type-profile">
-                                                <div class="head-type-profile">
-                                                    <h3>Phản hồi từ VSD</h3>
-                                                </div>
-
-                                                <!-- Dạng có thể chọn file-->
-
-                                                <div class="feedback-form-vsd">
-                                                    <p>- File đăng ký chứng khoán sai định dạng</p>
-                                                    <p>- Sổ hộ khẩu chưa được công chứng</p>
-                                                    <p>- Sai mã giấy phép đăng ký kinh doanh</p>
-                                                </div>
-                                            </div>
-                                            <div class="utiliti-handling">
-                                                <button type="button" class="btn-light-blue">Quay lại</button>
-                                                <button type="submit" class="btn-blue">Chỉnh sửa</button>
-                                            </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-vsd-25">
-                            <div class="zone-white-x">
-                                <div class="box-diary">
-                                    <a href="javascript:;" class="bars-close">
-                                        <img class="bars-blue" src="img/icon-bars-19.svg" alt="ảnh">
-                                        <img class="bars-gray" src="img/icon-bars-gray-19.svg" alt="ảnh">
-                                    </a>
-                                    <div class="diary-activate">
-                                        <div class="heading-diary">
-                                            <div class="txt-diary">Nhật ký hoạt động</div>
-                                        </div>
-                                        <div class="content-diary">
-                                            <div class="feedback-admin">
-                                                <div class="adminname-send">VSD</div>
-                                                <div class="content-fb-box">
-                                                    <div class="admin-content-fb">Đã từ chối phiếu đăng ký</div>
-                                                    <div class="time-send">26/11/2019 11:27:48</div>
-                                                </div>
+                        <div class="col-vsd-100">
+                            <div class="zone-white-x pd-20">
+                                <div class="form-data-block">
+                                    <div class="head-title-list">
+                                        <h3>Danh sách hồ sơ đăng ký lần đầu</h3>
+
+                                        <button class="btn-addpro">
+                                                <i class="fa fa-plus"></i>
+                                                Tạo mới hồ sơ
+                                        </button>
+                                    </div>
+
+<!--                                        <div class="search-field-block">-->
+<!--                                            <div class="search-detail">-->
+<!--                                                <div class="items-field">-->
+<!--                                                    <div class="label-field">Tên tài khoản</div>-->
+<!--                                                    <input type="text">-->
+<!--                                                </div>-->
+<!--                                                <div class="items-field">-->
+<!--                                                    <div class="label-field">Loại tài khoản</div>-->
+<!--                                                    <select>-->
+<!--                                                        <option>-All</option>-->
+<!--                                                        <option>-All</option>-->
+<!--                                                        <option>-All</option>-->
+<!--                                                    </select>-->
+<!--                                                </div>-->
+<!--                                                <div class="items-field">-->
+<!--                                                    <div class="label-field">Trạng thái</div>-->
+<!--                                                    <select>-->
+<!--                                                        <option>-All</option>-->
+<!--                                                        <option>-All</option>-->
+<!--                                                        <option>-All</option>-->
+<!--                                                    </select>-->
+<!--                                                </div>-->
+<!--                                                <div class="zone-search">-->
+<!--                                                    <button class="btn-search-list">Tìm kiếm</button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <button type="button" class="add-items-list" data-toggle="modal" data-target="#reason-rejection">-->
+<!--                                                <img src="img/icon-add-19.svg" alt="ảnh">-->
+<!--                                            </button>-->
+<!--                                        </div>-->
+
+                                        <!--  begin table-->
+                                    <div class="table-data-wrap">
+                                        <div class="tbl-data-block">
+                                            <table class="tbltype-1">
+                                                <thead>
+                                                <tr>
+                                                    <th class="text-center">STT</th>
+                                                    <th>Mã hồ sơ</th>
+                                                    <th>Tên hồ sơ</th>
+                                                    <th>Loại hồ sơ</th>
+                                                    <th>Ngày tạo</th>
+                                                    <th>Trạng thái</th>
+                                                    <th>Ngày duyệt</th>
+                                                    <th class="text-center">Chức năng</th>
+                                                </tr>
+
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-center">01</td>
+                                                    <td>Anhlt@gmail.com</td>
+                                                    <td>Trần Thị Lung Linh</td>
+                                                    <td>admin</td>
+                                                    <td>Thiết kế</td>
+                                                    <td><span class="txt-approved">Đã duyệt</span></td>
+                                                    <td>Thiết kế</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <span><i class="fa fa-info"></i></span>
+                                                        </a>
+                                                        <a href="#" class="list-item-main">
+                                                    <span>
+                                                        <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                        <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                    </span>
+                                                        </a>
+                                                        <a href="#" class="edit-item-list">
+                                                            <span><i class="fa fa-pencil"></i></span>
+                                                        </a>
+                                                        <a href="#" class="delete-item-list">
+                                                            <span><i class="fa fa-trash"></i></span>
+                                                        </a>
+                                                        <a href="#" class="reset-item-list">
+                                                    <span>
+                                                        <img class="imgbefore-hv" src="img/icon-reset-19-19.svg" alt="ảnh">
+                                                        <img class="imgafter-hv" src="img/icon-reset-wh-20.svg" alt="ảnh">
+                                                    </span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">01</td>
+                                                    <td>Anhlt@gmail.com</td>
+                                                    <td>Trần Thị Lung Linh</td>
+                                                    <td>admin</td>
+                                                    <td>Thiết kế</td>
+                                                    <td><span class="txt-pending">Chờ duyệt</span></td>
+                                                    <td>Thiết kế</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <span><i class="fa fa-info"></i></span>
+                                                        </a>
+                                                        <a href="#" class="list-item-main">
+                                                    <span>
+                                                        <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                        <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                    </span>
+                                                        </a>
+                                                        <a href="#" class="edit-item-list">
+                                                            <span><i class="fa fa-pencil"></i></span>
+                                                        </a>
+                                                        <a href="#" class="delete-item-list">
+                                                            <span><i class="fa fa-trash"></i></span>
+                                                        </a>
+                                                        <a href="#" class="reset-item-list">
+                                                    <span>
+                                                        <img class="imgbefore-hv" src="img/icon-reset-19-19.svg" alt="ảnh">
+                                                        <img class="imgafter-hv" src="img/icon-reset-wh-20.svg" alt="ảnh">
+                                                    </span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center">01</td>
+                                                    <td>Anhlt@gmail.com</td>
+                                                    <td>Trần Thị Lung Linh</td>
+                                                    <td>admin</td>
+                                                    <td>Thiết kế</td>
+                                                    <td><span class="txt-cancelled">Đã hủy bỏ</span></td>
+                                                    <td>Thiết kế</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="info-item-list">
+                                                            <span><i class="fa fa-info"></i></span>
+                                                        </a>
+                                                        <a href="#" class="list-item-main">
+                                                    <span>
+                                                        <img class="imgbefore-hv" src="img/icon-list-19.svg" alt="ảnh">
+                                                        <img class="imgafter-hv" src="img/icon-list-wh-19.svg" alt="ảnh">
+                                                    </span>
+                                                        </a>
+                                                        <a href="#" class="edit-item-list">
+                                                            <span><i class="fa fa-pencil"></i></span>
+                                                        </a>
+                                                        <a href="#" class="delete-item-list">
+                                                            <span><i class="fa fa-trash"></i></span>
+                                                        </a>
+                                                        <a href="#" class="reset-item-list">
+                                                    <span>
+                                                        <img class="imgbefore-hv" src="img/icon-reset-19-19.svg" alt="ảnh">
+                                                        <img class="imgafter-hv" src="img/icon-reset-wh-20.svg" alt="ảnh">
+                                                    </span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+
+
+                                                </tbody>
+                                            </table>
+                                            <div class="paging">
+                                                <ul>
+                                                    <div id="d_page">
+                                                        <div id="d_total_rec">Tổng số 367 bản ghi </div>
+                                                        <div id="d_number_of_page">
+                                                            <li onclick="page('2')">
+                                                                <span id="" href=""><< </span>
+                                                            </li>
+                                                            <li onclick="page(37)">
+                                                                <span id="pre" href=""><  </span>
+
+                                                            </li>
+                                                            <li onclick="page(1)">
+                                                                <span class="a-active" id="1" href="">1</span>
+                                                            </li>
+                                                            <li onclick="page(2)">
+                                                                <span class="" id="2" href="">2</span>
+                                                            </li>
+                                                            <li onclick="page(3)">
+                                                                <span class="" id="3" href="">3</span>
+                                                            </li>
+                                                            <li onclick="page('2')">
+                                                                <span id="next" href="">> </span>
+                                                            </li>
+                                                            <li onclick="page(37)">
+                                                                <span id="end" href="">>>  </span>
+                                                            </li>
+                                                        </div>
+                                                    </div>
+                                                </ul>
                                             </div>
-                                            <div class="feedback-user">
-                                                <div class="username-send">TCPH</div>
-                                                <div class="content-fb-box">
-                                                    <div class="user-content-fb">Đã cập nhật phiếu đăng ký</div>
-                                                    <div class="time-send">26/11/2019 11:27:48</div>
-                                                </div>
-                                            </div>
-                                            <div class="feedback-admin">
-                                                <div class="adminname-send">VSD</div>
-                                                <div class="content-fb-box">
-                                                    <div class="admin-content-fb">Đã xác nhận hồ sơ</div>
-                                                    <div class="time-send">26/11/2019 11:27:48</div>
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -437,3 +404,4 @@
 
 </body>
 </html>
+

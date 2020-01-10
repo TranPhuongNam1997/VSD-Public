@@ -12,12 +12,16 @@
     <link rel="stylesheet" href="libs/css/font-awesome.css">
     <link rel="stylesheet" href="libs/css/owl.carousel2.css">
     <link rel="stylesheet" href="libs/css/owl.theme2.css">
+    <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
 
     <link rel="stylesheet" href="sass/main.css">
 
     <script type="text/javascript" src="libs/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="libs/js/owl.carousel2.min.js"></script>
+    <script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="libs/js/moment.min.js"></script>
+    <script type="text/javascript" src="libs/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="libs/js/script.js"></script>
 </head>
 <body>
@@ -112,7 +116,7 @@
                                                     <h3>Thông tin về TCPH</h3>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Tên TCPH (tên đầy đủ)</div>
@@ -122,7 +126,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Tên đầy đủ</div>
@@ -132,7 +136,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Cấp lần đầu ngày</div>
@@ -142,7 +146,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Tên tiếng anh</div>
@@ -152,7 +156,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Tên viết tắt</div>
@@ -163,7 +167,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Cấp thay đổi lần thứ</div>
@@ -173,7 +177,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Điện thoại</div>
@@ -183,7 +187,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Vốn điều lệ</div>
@@ -193,17 +197,17 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Ngày cấp thay đổi</div>
                                                                 <div class="input-enter">
-                                                                    <input type="text">
+                                                                    <input type="text" name="datenormal" class="datepicker-vsd" autocomplete="off">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Fax</div>
@@ -213,17 +217,22 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Vốn thực góp</div>
                                                                 <div class="input-enter">
-                                                                    <input type="text">
+                                                                    <select class="items-select valid" aria-invalid="false">
+                                                                        <option>Công ty đại chúng</option>
+                                                                        <option>Công ty đại chúng</option>
+                                                                        <option>Công ty đại chúng</option>
+                                                                        <option>Công ty đại chúng</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Người đại diện liên hệ với VSD</div>
@@ -233,7 +242,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Số tài khoản</div>
@@ -243,7 +252,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Giấy ĐK kinh doanh số</div>
@@ -253,7 +262,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Nơi mở tài khoản</div>
@@ -263,7 +272,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form">
                                                                 <div class="title-input">Nơi cấp</div>
@@ -274,7 +283,7 @@
                                                         </div>
                                                     </div>
                                                     <!--   Chỉ riêng thằng ghi chú mới thay đổi vị trí-->
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-4 col-ct-1600">
                                                         <div class="formgroup-vsd">
                                                             <div class="row-form change-location">
                                                                 <div class="title-input">Ghi chú</div>

@@ -59,6 +59,50 @@ $( document ).ready(function() {
     //     the_return.innerHTML = this.value;
     // });
 
+    // js datetimepicker
+
+    // jQuery('.datepicker-vsd').datetimepicker({
+    //     timepicker:false,
+    //     format: 'd/m/Y'
+    // });
+
+
+    // checkvalidate
+
+    // $(".form-check-validate").validate(
+    //     {
+    //         rules:
+    //             {
+    //                 tentcph:
+    //                     {
+    //                         required: true
+    //                     },
+    //                 tentienganh:
+    //                     {
+    //                         required: true
+    //                     },
+    //                 noicap:
+    //                     {
+    //                         required: true
+    //                     }
+    //             },
+    //         messages:
+    //             {
+    //                 tentcph:
+    //                     {
+    //                         required: "Vui lòng nhập Tên TCPH"
+    //                     },
+    //                 tentienganh:
+    //                     {
+    //                         required: "Vui lòng nhập Tên tiếng anh"
+    //                     },
+    //                 noicap:
+    //                     {
+    //                         required: "Vui lsfsdafsd"
+    //                     }
+    //
+    //         }
+    // });
 });
 $(function() {
     $(".slider-news").owlCarousel({

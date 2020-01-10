@@ -115,3 +115,10 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 1600px) {
+  .col-ct-1600{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
