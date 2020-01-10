@@ -193,6 +193,52 @@ html, body {
         font-style: italic;
         color: #768289; }
 
+.modal.modal-vsd.popup-main .size-modal {
+  max-width: 922px; }
+.modal.modal-vsd.popup-main .mdl-header {
+  background: #164989;
+  padding: 10px 30px; }
+  .modal.modal-vsd.popup-main .mdl-header .heading-popup {
+    color: #fff;
+    font-size: 14px; }
+.modal.modal-vsd.popup-main .mdl-main {
+  padding: 0 30px; }
+  .modal.modal-vsd.popup-main .mdl-main .img-select-profile {
+    text-align: center;
+    margin: 46px 0 31px; }
+    .modal.modal-vsd.popup-main .mdl-main .img-select-profile img {
+      width: 264px;
+      height: 169px; }
+  .modal.modal-vsd.popup-main .mdl-main .txt-choose-pro {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #164989; }
+  .modal.modal-vsd.popup-main .mdl-main .box-select-pro {
+    width: 283px;
+    height: 40px;
+    padding: 11px 13px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #164989;
+    border-radius: 30px;
+    background: #D2EAFF;
+    text-align: left;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 14px;
+    outline: none; }
+    .modal.modal-vsd.popup-main .mdl-main .box-select-pro.active {
+      color: #fff;
+      background: #164989 url("../img/icon-tick-12.svg") no-repeat center right 15px;
+      background-size: 15px 15px; }
+  .modal.modal-vsd.popup-main .mdl-main .items-select-pro {
+    text-align: center; }
+.modal.modal-vsd.popup-main .mdl-footer {
+  padding: 17px 30px 35px;
+  text-align: center; }
+
 .zone-white-x {
   background: #fff;
   border-radius: 6px;

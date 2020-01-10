@@ -159,7 +159,7 @@
                                     <div class="head-title-list">
                                         <h3>Danh sách hồ sơ đăng ký lần đầu</h3>
 
-                                        <button class="btn-addpro">
+                                        <button class="btn-addpro"  data-toggle="modal" data-target="#reason-rejection">
                                                 <i class="fa fa-plus"></i>
                                                 Tạo mới hồ sơ
                                         </button>
@@ -399,6 +399,44 @@
             </div>
         </div>
         <a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+        <!--popup-view-->
+
+        <div class="modal modal-vsd popup-main" id="reason-rejection">
+            <div class="size-modal">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="mdl-header">
+                        <h3 class="heading-popup">Thêm mới hồ sơ</h3>
+                        <div class="btn-close"><img src="img/icon-mdl-close-19.svg" alt="ảnh" data-dismiss="modal"></div>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="mdl-main">
+                        <div class="img-select-profile">
+                            <img src="img/img-mdl-12.svg" alt="ảnh">
+                        </div>
+                        <div class="select-profile-block">
+                            <h3 class="txt-choose-pro">Chọn loại hồ sơ</h3>
+                            <div class="items-select-pro">
+                                <button type="button" class="box-select-pro active">Chứng khoán thông tin đại chúng</button>
+                                <button type="button" class="box-select-pro">Trái phiếu chính phủ</button>
+                                <br>
+                                <button type="button" class="box-select-pro">Trái phiếu tổ chức kinh tế, CQDP</button>
+                                <button type="button" class="box-select-pro">Chứng chỉ quỹ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="mdl-footer">
+                        <button type="button" class="btn-light-blue">Đóng</button>
+                        <button type="button" class="btn-blue">Tiếp theo</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </footer>
 </div>
 

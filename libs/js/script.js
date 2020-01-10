@@ -41,6 +41,13 @@ $( document ).ready(function() {
         $('.heading-diary').toggleClass('change-color');
     });
 
+    // js nut them moi
+
+    $('.box-select-pro').click(function () {
+        $('.box-select-pro').removeClass('active');
+        $(this).addClass('active');
+    })
+
     // js upload file
     // var fileInput  = document.querySelector( ".input-file" ),
     //     button     = document.querySelector( ".input-file-trigger" ),
