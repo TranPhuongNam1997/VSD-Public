@@ -224,7 +224,7 @@ html, body {
 .title-input {
   max-width: 175px;
   width: 100%;
-  padding: 9px 12px 0 0; }
+  padding: 0 12px 0 0; }
 
 .content-page-block {
   padding-left: 20px; }
@@ -236,6 +236,12 @@ html, body {
     content: '';
     display: table;
     clear: both; }
+
+.line-blue {
+  width: 100%;
+  height: 1px;
+  background: #164989;
+  margin-bottom: 5px; }
 
 .container-login {
   max-width: 1140px;
@@ -295,8 +301,12 @@ html, body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-items: end;
+  align-items: center;
   justify-content: space-between; }
+  .row-form.change-location {
+    align-items: end; }
+    .row-form.change-location .title-input {
+      padding-top: 9px; }
 
 .col-vsd-75 {
   padding: 0 6px;
@@ -495,7 +505,7 @@ html, body {
         background: #fff;
         border-radius: 50%; }
       .menu-category .menucate-lv1 > li .menucate-lv2 li:hover:after {
-        background: #fff; }
+        background: #fedf00; }
       .menu-category .menucate-lv1 > li .menucate-lv2 li:hover a {
         color: #fedf00;
         text-decoration: underline; }
@@ -507,7 +517,7 @@ html, body {
         padding-bottom: 12px;
         display: block; }
     .menu-category .menucate-lv1 > li .menucate-lv2 li.active-child:after {
-      background: #fff; }
+      background: #fedf00; }
     .menu-category .menucate-lv1 > li .menucate-lv2 li.active-child a {
       color: #fedf00;
       text-decoration: underline; }
@@ -907,7 +917,7 @@ html, body {
   margin-bottom: 7px; }
 
 .input-enter {
-  width: calc(100% - 200px); }
+  width: calc(100% - 175px); }
   .input-enter input {
     width: 100%;
     border: 1px solid #cecece;
@@ -1078,7 +1088,8 @@ html, body {
     background: #f6f6f6; }
   .upload-block.disabled-upload .file-return {
     color: #606060;
-    background: #EAEAEA; }
+    background: #EAEAEA;
+    padding: 7px 21px; }
   .upload-block.disabled-upload .type-file {
     border: none;
     background: #f6f6f6; }
@@ -1090,6 +1101,10 @@ html, body {
   border-radius: 30px;
   display: inline-block;
   margin-right: 9px; }
+  @media (max-width: 1800px) {
+    .type-file {
+      display: block;
+      margin-bottom: 10px; } }
   .type-file span {
     color: #606060; }
   .type-file .name-typefile {
@@ -1199,6 +1214,32 @@ html, body {
     color: #000;
     margin-bottom: 5px; }
 
+.left-profile h3 {
+  min-width: 280px;
+  margin-right: 10px;
+  display: inline-block; }
+.left-profile .upload-block {
+  display: inline-block;
+  margin-bottom: 0; }
+
+@media (max-width: 1800px) {
+  .file-type-profile .head-type-profile .left-profile h3 {
+    margin-bottom: 10px; }
+
+  .file-type-profile .head-type-profile .left-profile .upload-block {
+    display: block; }
+
+  .file-type-profile.resize-height .head-type-profile {
+    align-items: flex-start; }
+
+  .resize-height .input-file-container {
+    display: inline-block; }
+
+  .resize-height .file-return:not(:empty) {
+    margin-left: 17px; }
+
+  .info-different .upload-block {
+    margin-bottom: 25px; } }
 .footer {
   padding-top: 25px;
   padding-bottom: 13px;
@@ -1269,6 +1310,10 @@ html, body {
   position: relative;
   width: 269px;
   display: inline-block; }
+  @media (max-width: 1800px) {
+    .input-file-container {
+      margin-bottom: 10px;
+      display: block; } }
 
 .input-file-trigger {
   padding: 13px 35px;
@@ -1307,9 +1352,12 @@ html, body {
   margin-left: 17px;
   display: inline-block;
   color: #164989;
-  padding: 7px 21px;
+  padding: 7px 11px 7px 21px;
   border-radius: 30px;
   background: #D2EAFF; }
+  @media (max-width: 1800px) {
+    .file-return:not(:empty) {
+      margin-left: 0; } }
 
 .txt-up {
   color: #fff;
@@ -1373,6 +1421,19 @@ html, body {
   .btn-green:hover {
     background: #2bb339;
     transition: all 0.3s; }
+
+.btn-close-upload {
+  border: none;
+  background: none;
+  display: inline-block;
+  padding: 0;
+  margin-left: 10px; }
+  .btn-close-upload img {
+    width: 12px;
+    height: 12px; }
+
+.file-type-profile.resize-height .head-type-profile {
+  margin-bottom: 10px; }
 
 .items-news {
   padding: 30px; }

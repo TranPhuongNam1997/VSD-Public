@@ -7,6 +7,10 @@
   position: relative;
   width: 269px;
   display: inline-block;
+  @media (max-width: 1800px) {
+    margin-bottom: 10px;
+    display: block;
+  }
 }
 .input-file-trigger {
   padding: 13px 35px;
@@ -47,9 +51,12 @@
   margin-left: 17px;
   display: inline-block;
   color: $c-bl;
-  padding: 7px 21px;
+  padding: 7px 11px 7px 21px;
   border-radius: 30px;
   background: $c-lb;
+  @media (max-width: 1800px) {
+    margin-left: 0;
+  }
   //max-width: 312px;
   //overflow: hidden;
   //white-space: nowrap;
@@ -128,5 +135,23 @@
   &:hover{
     background: #2bb339;
     transition: all 0.3s;
+  }
+}
+
+.btn-close-upload{
+  border: none;
+  background: none;
+  display: inline-block;
+  padding: 0;
+  margin-left: 10px;
+  img{
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.file-type-profile.resize-height{
+  .head-type-profile{
+    margin-bottom: 10px;
   }
 }

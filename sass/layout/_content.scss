@@ -440,7 +440,7 @@
   margin-bottom: 7px;
 }
 .input-enter {
-  width: calc(100% - 200px);
+  width: calc(100% - 175px);
   input{
     width: 100%;
     border: 1px solid #cecece;
@@ -660,11 +660,13 @@
     .file-return{
       color: #606060;
       background: #EAEAEA;
+      padding: 7px 21px;
     }
     .type-file{
       border: none;
       background: #f6f6f6;
     }
+
   }
 }
 .type-file{
@@ -674,6 +676,10 @@
   border-radius: 30px;
   display: inline-block;
   margin-right: 9px;
+  @media (max-width: 1800px) {
+    display: block;
+    margin-bottom: 10px;
+  }
   span{
     color: #606060;
   }
@@ -804,5 +810,41 @@
   p{
     color: #000;
     margin-bottom: 5px;
+  }
+}
+
+.left-profile{
+  h3{
+    min-width: 280px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .upload-block{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1800px) {
+  .file-type-profile .head-type-profile .left-profile h3{
+    margin-bottom: 10px;
+  }
+  .file-type-profile .head-type-profile .left-profile .upload-block{
+    display: block;
+  }
+  .file-type-profile.resize-height .head-type-profile{
+    align-items: flex-start;
+  }
+  .resize-height .input-file-container{
+    display: inline-block;
+  }
+  .resize-height .file-return:not(:empty){
+    margin-left: 17px;
+  }
+  .info-different{
+    .input-file-container{
+    }
+    .upload-block{
+      margin-bottom: 25px;
+    }
   }
 }

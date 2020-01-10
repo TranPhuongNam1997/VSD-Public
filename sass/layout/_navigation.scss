@@ -131,7 +131,7 @@
             border-radius: 50%;
           }
           &:hover:after{
-            background: $c-wh;
+            background: #fedf00;
           }
           &:hover a{
             color: #fedf00;
@@ -151,7 +151,7 @@
         }
         li.active-child{
           &:after{
-            background: $c-wh;
+            background: #fedf00;
           }
           a{
             color: #fedf00;

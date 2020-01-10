@@ -60,8 +60,14 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
+  &.change-location{
+    align-items: end;
+    .title-input{
+      padding-top: 9px;
+    }
+  }
 }
 .col-vsd-75{
   padding: 0 6px;
