@@ -19,6 +19,18 @@ $( document ).ready(function() {
         }
     });
 
+    $(".block-list-guild").hide();
+    $(".list-parent-guide>li:first-child .block-list-guild").show();
+    $(".list-parent-guide>li>a").click(function(){
+        $(".block-list-guild").slideUp();
+        if(!$(this).next(".block-list-guild").is(":visible"))
+        {
+            $(this).next(".block-list-guild").slideDown();
+        }
+    });
+
+
+
     // js menubar
 
     $(".btn-bars-head button").click(function () {
@@ -68,10 +80,10 @@ $( document ).ready(function() {
 
     // js datetimepicker
 
-    // jQuery('.datepicker-vsd').datetimepicker({
-    //     timepicker:false,
-    //     format: 'd/m/Y'
-    // });
+    jQuery('.datepicker-vsd').datetimepicker({
+        timepicker:false,
+        format: 'd/m/Y'
+    });
 
 
     // checkvalidate
