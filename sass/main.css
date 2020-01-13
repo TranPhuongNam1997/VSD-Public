@@ -245,6 +245,9 @@ html, body {
 .modal.modal-vsd.popup-main .mdl-footer {
   padding: 17px 30px 35px;
   text-align: center; }
+  .modal.modal-vsd.popup-main .mdl-footer button {
+    margin-left: 0;
+    margin-right: 7px; }
 
 .certify-block {
   padding: 28px 0 19px;
@@ -275,6 +278,8 @@ html, body {
       width: 11px;
       height: 8px;
       margin-right: 4px; }
+    .certify-regis a:hover {
+      background: #306db9; }
 
 .daysend span {
   margin-right: 21px;

@@ -22,10 +22,12 @@ $( document ).ready(function() {
     $(".block-list-guild").hide();
     $(".list-parent-guide>li:first-child .block-list-guild").show();
     $(".list-parent-guide>li>a").click(function(){
+        $('.list-parent-guide>li>a').removeClass('active');
         $(".block-list-guild").slideUp();
         if(!$(this).next(".block-list-guild").is(":visible"))
         {
             $(this).next(".block-list-guild").slideDown();
+            $(this).addClass('active');
         }
     });
 

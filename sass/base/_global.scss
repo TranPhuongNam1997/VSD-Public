@@ -248,6 +248,10 @@ html, body {
   .mdl-footer{
     padding: 17px 30px 35px;
     text-align: center;
+    button{
+      margin-left: 0;
+      margin-right: 7px;
+    }
   }
 }
 .certify-block{
@@ -280,6 +284,9 @@ html, body {
       width: 11px;
       height: 8px;
       margin-right: 4px;
+    }
+    &:hover{
+      background: #306db9;
     }
   }
 }

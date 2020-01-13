@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fed6bd84-cf0b-4409-b6d7-5bf6034ff100" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libs/js/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addnew-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/addnew-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/edit-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infomation-guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/infomation-guide.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lishtake-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/lishtake-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/list-profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +76,8 @@
       <updated>1578648218995</updated>
       <workItem from="1578648220103" duration="2567000" />
       <workItem from="1578672383278" duration="3156000" />
-      <workItem from="1578706978464" duration="9050000" />
+      <workItem from="1578706978464" duration="9650000" />
+      <workItem from="1578880253585" duration="6211000" />
     </task>
     <servers />
   </component>
