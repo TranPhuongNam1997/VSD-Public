@@ -49,13 +49,20 @@
 }
 .file-return:not(:empty) {
   margin-left: 17px;
-  display: inline-block;
-  color: $c-bl;
-  padding: 7px 11px 7px 21px;
+  color: #164989;
+  padding: 7px 27px 7px 21px;
   border-radius: 30px;
-  background: $c-lb;
+  background: #D2EAFF;
+  max-width: 290px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
   @media (max-width: 1800px) {
     margin-left: 0;
+    display: block;
   }
   //max-width: 312px;
   //overflow: hidden;
@@ -144,6 +151,9 @@
   display: inline-block;
   padding: 0;
   margin-left: 10px;
+  position: absolute;
+  right: 11px;
+  top: 6px;
   img{
     width: 12px;
     height: 12px;

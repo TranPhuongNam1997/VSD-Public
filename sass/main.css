@@ -1747,7 +1747,8 @@ ul.list-child-guide li {
     color: #606060; }
   .type-file .name-typefile {
     color: #000;
-    margin-left: 15px; }
+    margin-left: 15px;
+    margin-bottom: 0; }
 
 .file-type-profile {
   padding: 25px 0 15px;
@@ -1771,6 +1772,17 @@ ul.list-child-guide li {
       color: #164989; }
       .file-type-profile .head-type-profile .sample-file .name-sample-file:hover {
         text-decoration: underline; }
+
+.block-detail-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px; }
+
+.name-typefile {
+  min-width: 146px;
+  display: inline-block;
+  margin-bottom: 10px; }
 
 .status-confirm {
   width: 102px;
@@ -1872,9 +1884,6 @@ ul.list-child-guide li {
 
   .resize-height .input-file-container {
     display: inline-block; }
-
-  .resize-height .file-return:not(:empty) {
-    margin-left: 17px; }
 
   .info-different .upload-block {
     margin-bottom: 25px; } }
@@ -2026,6 +2035,10 @@ ul.list-child-guide li {
     background: #D2EAFF;
     color: #164989;
     display: block; }
+    .list-parent-guide > li > a.active {
+      background: #a3d0f7; }
+    .list-parent-guide > li > a:hover {
+      background: #a3d0f7; }
   .list-parent-guide > li ul.list-child-guide li:first-child a, .list-parent-guide > li ul.list-child-guide li:nth-child(2) a {
     border-top: none; }
   .list-parent-guide > li ul.list-child-guide li a {
@@ -2149,14 +2162,21 @@ ul.list-child-guide li {
 
 .file-return:not(:empty) {
   margin-left: 17px;
-  display: inline-block;
   color: #164989;
-  padding: 7px 11px 7px 21px;
+  padding: 7px 27px 7px 21px;
   border-radius: 30px;
-  background: #D2EAFF; }
+  background: #D2EAFF;
+  max-width: 290px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
   @media (max-width: 1800px) {
     .file-return:not(:empty) {
-      margin-left: 0; } }
+      margin-left: 0;
+      display: block; } }
 
 .txt-up {
   color: #fff;
@@ -2226,7 +2246,10 @@ ul.list-child-guide li {
   background: none;
   display: inline-block;
   padding: 0;
-  margin-left: 10px; }
+  margin-left: 10px;
+  position: absolute;
+  right: 11px;
+  top: 6px; }
   .btn-close-upload img {
     width: 12px;
     height: 12px; }

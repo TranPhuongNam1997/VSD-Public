@@ -11,10 +11,10 @@ $( document ).ready(function() {
     $(".menucate-lv1 > li > a").click(function(){
         $(".menucate-lv1 > li.hasdrop-cate").removeClass('rotate-down');
 
-        $(".menucate-lv2").slideUp();
+        $(".menucate-lv2").slideUp(300);
         if(!$(this).next(".menucate-lv2").is(":visible"))
         {
-            $(this).next(".menucate-lv2").slideDown();
+            $(this).next(".menucate-lv2").slideDown(300);
             $(this).parent().addClass('rotate-down');
         }
     });

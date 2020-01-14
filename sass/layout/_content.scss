@@ -680,12 +680,14 @@
     display: block;
     margin-bottom: 10px;
   }
+
   span{
     color: #606060;
   }
   .name-typefile{
     color: #000;
     margin-left: 15px;
+    margin-bottom: 0;
   }
 }
 
@@ -718,6 +720,17 @@
       }
     }
   }
+}
+.block-detail-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.name-typefile {
+  min-width: 146px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .status-confirm{
@@ -838,7 +851,7 @@
     display: inline-block;
   }
   .resize-height .file-return:not(:empty){
-    margin-left: 17px;
+    //margin-left: 17px;
   }
   .info-different{
     .input-file-container{
@@ -1061,9 +1074,12 @@
       background: $c-lb;
       color: $c-bl;
       display: block;
-      //&.active{
-      //  background: #000;
-      //}
+      &.active{
+        background: #a3d0f7;
+      }
+      &:hover{
+        background: #a3d0f7;
+      }
     }
 
     ul.list-child-guide{
