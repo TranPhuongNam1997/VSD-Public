@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fed6bd84-cf0b-4409-b6d7-5bf6034ff100" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detail-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail-profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
     </list>
@@ -72,7 +70,7 @@
       <workItem from="1578672383278" duration="3156000" />
       <workItem from="1578706978464" duration="9650000" />
       <workItem from="1578880253585" duration="6211000" />
-      <workItem from="1578968028424" duration="4606000" />
+      <workItem from="1578968028424" duration="6468000" />
     </task>
     <servers />
   </component>

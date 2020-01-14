@@ -31,8 +31,10 @@ $( document ).ready(function() {
         }
     });
 
-
-
+    //js select
+    $('select').click(function () {
+        $(this).toggleClass('select-icon-up');
+    });
     // js menubar
 
     $(".btn-bars-head button").click(function () {
