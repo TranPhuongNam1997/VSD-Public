@@ -131,6 +131,14 @@ select {
   margin-bottom: 11px;
   font-size: 13px; }
 
+label.error {
+  color: #ED1111;
+  padding-top: 5px;
+  padding-left: 24px;
+  background: url(../img/icon-checkvalidate.svg) no-repeat top 4px left;
+  background-size: 16px;
+  margin-bottom: 0; }
+
 .modal.modal-vsd {
   padding-right: 0 !important;
   background: rgba(0, 0, 0, 0.6);
@@ -1619,7 +1627,9 @@ ul.list-child-guide li {
 .box-diary {
   padding: 20px 30px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100vh;
+  overflow: auto; }
 
 .bars-close {
   position: absolute;

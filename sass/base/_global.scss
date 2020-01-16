@@ -100,6 +100,16 @@ select{
   font-size: 13px;
 }
 
+//style error validate
+
+label.error {
+  color: #ED1111;
+  padding-top: 5px;
+  padding-left: 24px;
+  background: url(../img/icon-checkvalidate.svg) no-repeat top 4px left;
+  background-size: 16px;
+  margin-bottom: 0;
+}
 
 //css popup
 
