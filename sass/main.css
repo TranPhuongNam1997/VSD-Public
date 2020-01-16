@@ -1620,6 +1620,21 @@ ul.list-child-guide li {
     color: #912020;
     background: #FFDCDC;
     border-radius: 30px; }
+  .txt-info-issuers .state-confirmed-approve {
+    padding: 5px 18px;
+    color: #319925;
+    background: #E0FFDC;
+    border-radius: 30px; }
+  .txt-info-issuers .state-waitconfirm-approve {
+    padding: 5px 18px;
+    color: #a37400;
+    background: #f4f0be;
+    border-radius: 30px; }
+  .txt-info-issuers .state-draf {
+    padding: 5px 18px;
+    color: #606060;
+    background: #eaeaea;
+    border-radius: 30px; }
 
 .form-enter-default {
   margin-bottom: 20px; }

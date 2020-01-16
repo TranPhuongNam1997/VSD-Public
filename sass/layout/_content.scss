@@ -488,6 +488,26 @@
     background: #FFDCDC;
     border-radius: 30px;
   }
+  .state-confirmed-approve{
+    padding: 5px 18px;
+    color: #319925;
+    background: #E0FFDC;
+    border-radius: 30px;
+  }
+  .state-waitconfirm-approve{
+    padding: 5px 18px;
+    color: rgb(163, 116, 0);
+    background: rgb(244, 240, 190);
+    border-radius: 30px;
+  }
+  .state-draf{
+    padding: 5px 18px;
+    color: rgb(96, 96, 96);
+    background: rgb(234, 234, 234);
+    border-radius: 30px;
+  }
+
+
 }
 .form-enter-default{
   margin-bottom: 20px;
