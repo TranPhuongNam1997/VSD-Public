@@ -198,6 +198,9 @@
     bottom: 34px;
     width: 100%;
     z-index: 10;
+    @media (max-width: 1390px) {
+      bottom: 23px;
+    }
     .copyright{
       color: $c-wh;
       line-height: 13px;
